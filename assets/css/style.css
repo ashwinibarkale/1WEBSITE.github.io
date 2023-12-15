@@ -331,6 +331,29 @@ p.special-paragraph {
 }
 
 
+/* Add this CSS to your stylesheet */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.btn-scroll i {
+  animation: moveUpDown 1s infinite;
+}
+
+
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .btn-scroll {
+   
+    display: block; /* Show on smaller screens */
+  }
+}
 
 .typewriter h2 {
   color: #fff;
@@ -615,6 +638,215 @@ section {
   transition: 0.9s;
   background-color: yellow;
 }
+
+
+
+
+
+
+
+
+/* 
+-------------------------------------
+     education
+-------------------------------------
+ */
+
+
+
+/* General styling for the design section */
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  min-height: 100vh;
+  padding: 60px 0;
+  font-family: 'Jost', sans-serif;
+}
+
+/* Styling for the timeline component headings (h3) */
+.timeline-component h3 {
+  -webkit-text-stroke: 1px aqua; /* WebKit (Chrome, Safari) syntax */
+  text-stroke: 1px black; /* Standard syntax */
+  text-shadow: 0 0 3px white, 0 0 3px yellow;
+}
+
+/* Styling for the timeline component paragraphs (p) */
+.timeline-component p {
+  color:hotpink; /* Replace with your desired color code */
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* General styling for the design section container */
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the timeline container */
+.timeline {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the timeline content */
+.timeline-content {
+  background: black;
+  border: 2px solid yellow; /* Set the border color to yellow */
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Additional styling for the timeline component */
+.timeline-component {
+  margin: 0 20px 20px 20px;
+}
+
+/* Media query for larger screens (768px and above) */
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+
+  /* Styling for the middle line in the timeline */
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    width: 3px;
+    height: 100%;
+  }
+
+  /* Styling for the circle in the middle of the timeline */
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# INTEREST
+--------------------------------------------------------------*/
+.interst {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+
+
+
+/* Center the titles */
+.interest-card h3 {
+  text-align: center;
+}
+
+/* Change title color to hot pink */
+.interest-card h3 {
+  color: black;
+  text-transform: uppercase;
+}
+
+
+.interest-card {
+  background-color: lightcyan; /* Initial background color */
+  padding: 30px;
+  border-radius: 5px;
+  
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: cardAnimation 1s forwards, backgroundColorAnimation 5s infinite alternate, borderColorAnimation 5s infinite alternate;
+  position: relative;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.border-animation {
+  border: 2px solid red;
+}
+
+.interest-card h3 {
+  font-size: 24px;
+  font-weight: bold; /* Add this line to make the heading bold */
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", sans-serif; /* Add a suitable font-family */
+}
+
+.interest-card p {
+  font-size: 16px;
+  color: black;
+}
+
+@keyframes cardAnimation {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes backgroundColorAnimation {
+  30% {
+    background-color: brown;
+  }
+  40% {
+    background-color: gold; /* Change this to the desired color */
+  }
+  50% {
+    background-color: purple; /* Change this to the desired color */
+  }
+  60% {
+    background-color:skyblue; /* Change this to the desired color */
+  }
+}
+
+@keyframes borderColorAnimation {
+  0% {
+    border-color: goldenrod;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: purple;
+  }
+}
+
+@media (max-width: 768px) {
+  .interest-card {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # My Resume
