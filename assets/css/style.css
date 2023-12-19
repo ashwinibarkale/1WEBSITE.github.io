@@ -1,5 +1,4 @@
 
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -346,7 +345,6 @@ p.special-paragraph {
 }
 
 
-
 /* Media query for smaller screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
   .btn-scroll {
@@ -597,9 +595,13 @@ section {
 }
 
 .about .image {
-  background: url("../img/ab-removebg-preview\ \(1\)\ \(1\).jpg") center center no-repeat;
+  background: url("../img/ashume123\ \(1\).jpg") center center no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 200px;
+  border-radius: 10px;
+  
+  border: 1px solid yellow;
+ 
 }
 
 .about .skills-content {
@@ -638,13 +640,6 @@ section {
   transition: 0.9s;
   background-color: yellow;
 }
-
-
-
-
-
-
-
 
 /* 
 -------------------------------------
@@ -742,12 +737,6 @@ section {
   }
 }
 
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # INTEREST
 --------------------------------------------------------------*/
@@ -756,9 +745,6 @@ section {
   background-color: #f5f5f5;
   text-align: center;
 }
-
-
-
 
 /* Center the titles */
 .interest-card h3 {
@@ -770,7 +756,6 @@ section {
   color: black;
   text-transform: uppercase;
 }
-
 
 .interest-card {
   background-color: lightcyan; /* Initial background color */
@@ -840,13 +825,6 @@ section {
     padding: 20px;
   }
 }
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # My Resume
