@@ -597,15 +597,18 @@ section {
 .about .image {
   background: url("../img/snap.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 200px;
+  height: 80vh; /* Set height to 100% of the viewport height */
+  min-height: 200px; /* Minimum height */
   border-radius: 10px;
   border: 1px solid yellow;
 }
+
 @media (max-width: 768px) {
   .about .image {
     min-height: 600px; 
   }
 }
+
 
 
 
