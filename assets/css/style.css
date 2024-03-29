@@ -595,7 +595,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/pic24.webp") center center no-repeat;
+  background: url("../img/pic24.jpg") center center no-repeat;
   background-size: cover;
   height: 90vh; /* Set height to 100% of the viewport height */
   
